@@ -79,7 +79,7 @@ header .logo a img {
 }
 
 .principal{
-    margin-left: 240px;
+    margin-left: 230px;
     background-color: #ffffff;
     width: 630px;
     height: 750px;
@@ -156,6 +156,28 @@ header .logo a img {
 	top:1px;
 }
 
+.styled-select {
+	width: 200px;
+	position: relative;
+}
+ 
+select {
+	width: 100%;
+	background: #F3F3F3;
+	color: #585757;
+	padding: 5px;
+	font-size: 13px;
+	line-height: 100%;
+	border: 1px solid #C1C1C1;
+	border-radius: 0;
+	height: 30px;
+	-webkit-appearance: none;
+}
+ 
+option {
+	padding: 10px;
+}
+
 #slider {
 	height:400px;
 	width:580px;
@@ -207,4 +229,3 @@ header .logo a img {
 .right_hold:hover .right {
 	opacity:0.6;
 }
-.left:hover .left1

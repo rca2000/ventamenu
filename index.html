@@ -1,44 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" xml:lang="es">
     <head>
         <meta charset="UTF-8"/>
         <title>Ventas de Menu Delivery</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="css/normalize.css" rel="stylesheet" type="text/css">
-        <link href="css/foundation.min.css" rel="stylesheet" type="text/css">
-        <script src="js/slider.js"></script> 
+        <script src="js/fecha_actual.js"></script> 
     </head>
     <body>
         <div class="contenedor">
-            <header>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">INICIO</a>
-                        </li>
-                        <li>
-                            <a href="#">NOSOTROS</a>
-                        </li>
-                        <li class="logo">
-                            <a href="#">
-                                <img src="img/logo.png"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">SERVICIO</a>
-                        </li>
-                        <li>
-                            <a href="#">CONTACTENOS</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="lateral" style="border-style:solid;border-width:1px;border-color:#1E90FF;padding:2px 10px;">
-                <br>
-                <section>
-                    Distrito
-                    <div class="styled-select">
+                <header>
+                    <div style="text-align:center;width:100%;">
+                    <table style="margin: 0 auto;">
+                        <tr>
+                            <td style="align:left;">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="#">INICIO</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ACERCA DE</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </td>
+                            <td style="align:center;">
+                                <a href="#">
+                                    <img src="img/logo.png"/>
+                                </a>
+                            </td>
+                            <td style="align:right;">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="#">SERVICIO</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CONTACTENOS</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>  
+                </header>
+            <div class="lateral">
+                <form class="formlateral">
+                    <h2 class="h2lateral">Lima</h2>
+                    <label for="distrito">Distrito</label>
+                    <div>
                         <select>
                             <option value="100">Ate</option>
                             <option value="200">Barranco</option>
@@ -48,40 +60,38 @@
                         </select>
                     </div>
                     <div align="right">
-                        <a href="locales.html" class="boton">Buscar</a>
+                        <input id="button" value="Buscar" onclick="window.open('locales.html')" style="width: 25%;"/>
                     </div>
-                </section>
-                <hr align="center" size="2" width="200" color="#1E90FF" noshade>
-                <section>
-                    <h4>Regístrate</h4>
-                    <div style="border-style:solid;border-width:1px;border-color:#1E90FF;padding:6px 24px;">
-                        Usuario
-                        <input type="text" name="usuario" style="height:25px;"/>
-                        Clave
-                        <input type="text" name="clave" style="height:25px;"/>
+                </form>
+                <br>
+                <hr align="center" size="2" width="260" color="#C77108" noshade>
+                <form class="formlateral">
+                    <h2 class="h2lateral">Regístrate</h2>
+                    <div class="divregistrate">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario" style="width:90%"/>
+                        <label for="clave">Clave</label>
+                        <input type="text" id="clave" style="width:90%"/>
                         <div align="center">
-                            <a href="#" class="boton" style="width:110px;">Ingresar</a>
-                            <br><br>
-                            <a href="#" class="boton" style="width:110px;">Regístrate</a>
+                            <input id="button" value="Ingresar" style="width: 40%;"/>
+                            <input id="button" value="Regístrate" style="width: 40%;"/>
                         </div>
                     </div>
-                </section>
+                </form>
+                <div id="calendar">
+                    <p id="calendar-day"></p>
+                    <p id="calendar-date"></p>
+                    <p id="calendar-month-year"></p>
+                </div>
             </div>
-            <div class="principal" style="border-style:solid;border-width:1px;border-color:#1E90FF;padding:6px 24px;">
+            <div class="principal">
                 <article>
                     <br>
-                    <header>
-                        <h2>Bienvenidos</h2>
-                    </header>
+                    <h2>Bienvenidos</h2>
                     <section style="text-align:justify;">
                         Desde Tactic Solutions queremos agradecerle su visita y darle la bienvenida a nuestro nuevo sitio web.
                         Hace más de ocho años que estamos a su disposición ofreciéndole un servicio profesional y adaptado a sus necesidades. Nuestro nuevo sitio web pretende ofrecerle la información necesaria para que tome las mejores decisiones cuando planee su próximo proyecto.
                     </section>
-                        <div id="slider">
-                            <img src="img/img1.png" id="image">
-                            <div class="left_hold"><img onClick="photo(-1)" class="left" src="img/arrow_left.png"></div>
-                            <div class="right_hold"><img onClick="photo(1)" class="right" src="img/arrow_right.png"></div>
-                        </div>
                 </article>
             </div>
         </div>

@@ -4,8 +4,8 @@
         <meta charset="UTF-8"/>
         <title>Ventas de Menu Delivery</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <script src="js/fechaactual.js"></script>
-        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/fechaactual.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <script>
             function cargar(div, desde)
             {
@@ -13,7 +13,7 @@
             }
         </script>
     </head>
-    <body onLoad="cargar('#principal', 'inicio.html')">
+    <body>
         <div class="contenedor">
                 <header>
                     <div style="text-align:center;width:100%;">
@@ -58,6 +58,7 @@
                     <label for="distrito">Distrito</label>
                     <div>
                         <select>
+                            <option selected> ---Seleccione Distrito--- </option>
                             <option value="100">Ate</option>
                             <option value="200">Barranco</option>
                             <option value="300">Miraflores</option>
@@ -91,7 +92,19 @@
                 </div>
             </div>
             <div id="principal">
-
+                <div class="contenido">
+                    <h2>Bienvenidos</h2>
+                    <p>
+                        La Mamma Restaurante se encuentra en pleno centro de la ciudad de Córdoba, con sabores de otros tiempos, un espacio dedicado a atender las más altas exigencias en gastronomía. 
+                        En cada rincón de nuestras instalaciones puede respirarse un ambiente de calidez y de buen gusto, ideal para disfrutar de los menúes más exquisitos y típicos de nuestro país.
+                        La carta incluye platos tradicionales en los que se destacan la elaboración de pastas, postres y una amplia variedad de cortes de carne, acompañados de los mejores vinos de las bodegas más exclusivas.
+                    </p>
+                    <div id="slider">
+                        <img src="/img/img1.png" id="image" >
+                        <div class="left_hold"><img onClick="photo(-1)" class="left" src="/img/arrow_left.png"></div>
+                        <div class="right_hold"><img onClick="photo(1)" class="right" src="/img/arrow_right.png"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

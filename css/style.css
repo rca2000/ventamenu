@@ -185,7 +185,7 @@ select {
 	width: 230px; /*Width of select dropdown to give space for arrow image*/
 	text-indent: 0.01px; /* Removes default arrow from firefox*/
 	text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
-	padding: 5px;
+	padding: 5px 5px 5px 5px;
 	box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
 }
 
@@ -243,33 +243,37 @@ input[type="text"] {
 	border-radius: 5px;
 }
 
-#calendar{
+.labelcontenido {
+	display: inline-block;
+	margin: 0.5em 0 0 0;
+}
+
+#calendar {
     width: 130px;
     height: 180px;
     background-color: cornflowerblue;
     color: #fff;
+	/*give the button curved corners, alter the size as required*/
+	-moz-border-radius: 5%;
+	-webkit-border-radius: 5%;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     margin: 25px auto;
 }
-
-#calendar>p{
+#calendar>p {
     font-family: Verdana, Arial, sans-serif;
     padding: 10px 0;
     margin: 0;
     color: #fff;
     text-align: center;
 }
-
-#calendar-day{
+#calendar-day {
     font-size: 16px;
 }
-
-#calendar-month-year{
+#calendar-month-year {
     font-size: 14px;
 }
-
-#calendar-date{
+#calendar-date {
     font-size: 64px;
     padding-top: 10px;
     padding-bottom: 0;
@@ -326,6 +330,21 @@ input[type="text"] {
 }
 .right_hold:hover .right {
 	opacity: 0.6;
+}
+
+.formcontenido {
+	margin: 0 auto;
+}
+
+.divcontenido {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1F9A3C;
+	padding: 15px 15px 15px 15px;
+	/*give the button curved corners, alter the size as required*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 }
 
 .divimg {

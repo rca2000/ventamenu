@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/sliderimg.js"></script>
+        <script>
+            function cargar(div, desde)
+            {
+                $(div).load(desde);
+            }
+        </script>
+    </head>
+    <body onLoad="photoA()">
+        <div class="contenido">
+            <h2>Bienvenidos</h2>
+            <p>
+                La Mamma Restaurante se encuentra en pleno centro de la ciudad de Córdoba, con sabores de otros tiempos, un espacio dedicado a atender las más altas exigencias en gastronomía. 
+                En cada rincón de nuestras instalaciones puede respirarse un ambiente de calidez y de buen gusto, ideal para disfrutar de los menúes más exquisitos y típicos de nuestro país.
+                La carta incluye platos tradicionales en los que se destacan la elaboración de pastas, postres y una amplia variedad de cortes de carne, acompañados de los mejores vinos de las bodegas más exclusivas.
+            </p>
+            <div id="slider">
+                <img src="/img/img1.png" id="image" >
+                <div class="left_hold"><img onClick="photo(-1)" class="left" src="/img/arrow_left.png"></div>
+                <div class="right_hold"><img onClick="photo(1)" class="right" src="/img/arrow_right.png"></div>
+            </div>
+        </div>
+    </body>
+</html>

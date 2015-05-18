@@ -1,0 +1,15 @@
+
+<script type="text/javascript">
+//<![CDATA[
+function alert_en_script(mensaje){
+alert(mensaje);
+}
+alert('hola');
+window.onload = alert('gracias');
+//]]>
+</script>
+<h1 class="rojo">GOLF</h1>
+<h1 class="verde">GOLF</h1>
+<h1 onclick="mensaje();" class="azul">Función de Javascript js externo y funcionará solo si utilizamos "cargar css y js"<br /><small>click aquí</small></h1>
+<h1 onclick="alert_en_script('Este alert esta pasado en una función escrita en el propio golf.html');" class="azul">Función de Javascript definida en golf.html y no va a funcionar en ningún caso<br /><small>click aquí</small></h1>
+<h1 onclick="alert('Este alert se genera directamente desde un evento onclick');" class="azul">Este alert se genera directamente desde un evento onclick y funcionará usemos ó no "cargar css y js"<br /><small>click aquí</small></h1>

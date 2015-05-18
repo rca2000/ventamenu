@@ -3,11 +3,17 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Ventas de Menu Delivery</title>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <script src="js/fecha_actual.js"></script> 
+        <script src="js/fechaactual.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script>
+            function cargar(div, desde)
+            {
+                $(div).load(desde);
+            }
+        </script>
     </head>
-    <body>
+    <body onLoad="cargar('#principal', 'inicio.html')">
         <div class="contenedor">
                 <header>
                     <div style="text-align:center;width:100%;">
@@ -17,10 +23,10 @@
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href="#">INICIO</a>
+                                            <a href="#" onclick="cargar('#principal', 'inicio.html')">INICIO</a>
                                         </li>
                                         <li>
-                                            <a href="#">ACERCA DE</a>
+                                            <a href="#" onclick="cargar('#principal', 'nosotros.html')">NOSOTROS</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -60,7 +66,7 @@
                         </select>
                     </div>
                     <div align="right">
-                        <input id="button" value="Buscar" onclick="window.open('locales.html')" style="width: 25%;"/>
+                        <input id="button" value="Buscar" onclick="cargar('#principal', 'locales.html')" style="width: 25%;"/>
                     </div>
                 </form>
                 <br>
@@ -84,15 +90,8 @@
                     <p id="calendar-month-year"></p>
                 </div>
             </div>
-            <div class="principal">
-                <article>
-                    <br>
-                    <h2>Bienvenidos</h2>
-                    <section style="text-align:justify;">
-                        Desde Tactic Solutions queremos agradecerle su visita y darle la bienvenida a nuestro nuevo sitio web.
-                        Hace más de ocho años que estamos a su disposición ofreciéndole un servicio profesional y adaptado a sus necesidades. Nuestro nuevo sitio web pretende ofrecerle la información necesaria para que tome las mejores decisiones cuando planee su próximo proyecto.
-                    </section>
-                </article>
+            <div id="principal">
+
             </div>
         </div>
     </body>

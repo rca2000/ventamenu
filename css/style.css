@@ -139,10 +139,10 @@ header .logo a img {
 	border-radius: 15px 15px 15px 15px;
 }
 
-.principal{
+#principal {
 	margin-top: 5px;
     margin-left: 271px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     height: 700px;
     border-style: solid;
     border-width: 1px;
@@ -154,6 +154,16 @@ header .logo a img {
 	-webkit-border-radius: 15px 15px 15px 15px;
 	/* para Opera */
 	border-radius: 15px 15px 15px 15px;
+}
+
+.contenido {
+	margin: 25px 20px 25px 20px;
+	color: #000000;
+	font-size: 16px;
+	text-align: justify;
+	font-weight: bold;
+	height: 650px;
+	overflow-y : auto;
 }
 
 .formlateral {
@@ -263,4 +273,76 @@ input[type="text"] {
     font-size: 64px;
     padding-top: 10px;
     padding-bottom: 0;
+}
+
+#slider {
+	height: 360px;
+	width: 650px;
+	margin: 50px auto;
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+}
+#image {
+	height: 360px;
+	width: 650px;
+	position: absolute;
+	opacity: 0.7;
+}
+.left_hold {
+	height: 360px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.right_hold {
+	height: 360px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.left {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 40%;
+	left: 20px;
+	opacity: 0;
+	transition: all .2s ease-in-out 0s;
+}
+.right {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 40%;
+	right: 20px;
+	opacity: 0;
+	transition: all .5s ease-in-out 0s;
+}
+.left_hold:hover .left {
+	opacity: 0.6;
+}
+.right_hold:hover .right {
+	opacity: 0.6;
+}
+
+.divimg {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1F9A3C;
+	padding: 6px 6px 6px 6px;
+	/*give the button curved corners, alter the size as required*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.imagen {
+	height: 110px;
+	width: 150px;
+	float: left;
+	opacity: 0.7;
+	padding: 5px
 }

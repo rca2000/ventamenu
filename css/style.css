@@ -363,5 +363,28 @@ input[type="text"] {
 	width: 150px;
 	float: left;
 	opacity: 0.7;
-	padding: 5px
+	padding: 5px 5px 5px 5px;
+}
+
+.ulcontenido {
+	width: 650px;
+	list-style-type: none;
+	list-style-position: outside;
+	margin: 0px;
+	padding: 0px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+.checkbox label:before {
+    border-radius: 3px;
+}
+input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 15px;
 }

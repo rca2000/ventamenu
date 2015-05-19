@@ -345,6 +345,7 @@ input[type="text"] {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
+	margin-top: 10px;
 }
 
 .divimg {
@@ -366,25 +367,28 @@ input[type="text"] {
 	padding: 5px 5px 5px 5px;
 }
 
-.ulcontenido {
-	width: 650px;
-	list-style-type: none;
-	list-style-position: outside;
-	margin: 0px;
-	padding: 0px;
+.checkbox {
+	display: block;
+	cursor: pointer;
+	font-size: 16px; margin-right:10px; line-height:18px;
 }
-
 input[type=checkbox] {
-    display: none;
+ display:none;	
 }
-.checkbox label:before {
-    border-radius: 3px;
+.checkbox:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align:middle;
+	background-color: #0088cc;
+	color: #f3f3f3;
+	text-align: center;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);	
+	border-radius: 3px;
 }
-input[type=checkbox]:checked + label:before {
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 15px;
-    color: #f3f3f3;
-    text-align: center;
-    line-height: 15px;
+input[type=checkbox]:checked + .checkbox:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 16px;
 }

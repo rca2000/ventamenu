@@ -4,7 +4,8 @@
         <meta charset="UTF-8"/>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script>
+        <script type="text/javascript" src="js/clearform.js"></script>
+        <script type="text/javascript">
             function cargar(div, desde)
             {
                 $(div).load(desde);
@@ -28,7 +29,7 @@
                             <h3 style="margin:10px">MENU DELIVERY S/. 13.00</h3>
                         </div>
                         <div style="width:70%;margin:0 auto;">
-                        <form class="formcontenido">
+                        <form class="formcontenido" action="#">
                             <p>ENTRADAS S/. 6.00</p>
                     		<input id="check1" type="checkbox" name="check" value="check1">
                     		<label class="checkbox" for="check1"> E1) Chicharron de pollo con yuquitas</label>
@@ -49,7 +50,7 @@
                     		<label class="checkbox" for="check8"> S4) Lomo saltado con fetuccini</label>
                             <p>REFRESCO</p>
                             <div align="center">
-                                <input id="button" value="Aceptar" style="width: 10%;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="button" value="Limpiar" style="width: 10%;"/>
+                                <input type="button" value="Aceptar" style="width: 10%;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Limpiar" style="width: 10%;" onclick="clearForm(this.form);"/>
                             </div>
                         </form>
                         </div>
